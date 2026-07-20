@@ -851,6 +851,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   moveSpeed: 3
+  attackRange: 1.5
+  attackDamage: 10
+  attackCooldown: 1
 --- !u!143 &964439787
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1187,6 +1190,7 @@ GameObject:
   - component: {fileID: 1746836131}
   - component: {fileID: 1746836130}
   - component: {fileID: 1746836129}
+  - component: {fileID: 1746836134}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1308,6 +1312,19 @@ Transform:
   - {fileID: 759620972}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1746836134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746836128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450a45ceef4e8f746b2b5b2079ccaf74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  maxHealth: 100
 --- !u!1 &1851015420
 GameObject:
   m_ObjectHideFlags: 0
